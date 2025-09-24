@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio - Mockup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                borderRadius: {
+                    lg: "var(--radius)",
+                    md: "calc(var(--radius) - 2px)",
+                    sm: "calc(var(--radius) - 4px)",
+                },
+                colors: {
+                    background: "var(--background)",
+                    foreground: "var(--foreground)",
+                    card: {
+                        DEFAULT: "var(--card)",
+                        foreground: "var(--card-foreground)",
+                    },
+                    primary: {
+                        DEFAULT: "var(--primary)",
+                        foreground: "var(--primary-foreground)",
+                    },
+                    secondary: {
+                        DEFAULT: "var(--secondary)",
+                        foreground: "var(--secondary-foreground)",
+                    },
+                    muted: {
+                        DEFAULT: "var(--muted)",
+                        foreground: "var(--muted-foreground)",
+                    },
+                    accent: {
+                        DEFAULT: "var(--accent)",
+                        foreground: "var(--accent-foreground)",
+                    },
+                    border: "var(--border)",
+                    input: "var(--input)",
+                    ring: "var(--ring)",
+                },
+                fontFamily: {
+                    sans: ["Inter", "system-ui", "sans-serif"],
+                }
+            },
+        }
+    };
+    </script>
+    <style>
+        :root {
+            --background: hsl(314 45% 5%);
+            --foreground: hsl(20 20% 95%);
+            --card: hsl(314 25% 15%);
+            --card-foreground: hsl(20 20% 90%);
+            --primary: hsl(330 15% 45%);
+            --primary-foreground: hsl(20 20% 95%);
+            --secondary: hsl(330 25% 35%);
+            --secondary-foreground: hsl(20 20% 95%);
+            --muted: hsl(314 20% 20%);
+            --muted-foreground: hsl(20 10% 70%);
+            --accent: hsl(330 35% 25%);
+            --accent-foreground: hsl(20 20% 95%);
+            --border: hsl(314 20% 25%);
+            --input: hsl(314 20% 18%);
+            --ring: hsl(330 15% 45%);
+            --radius: 0.5rem;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, hsl(20 20% 95%) 0%, hsl(330 25% 75%) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .project-card {
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(118, 93, 103, 0.25);
+        }
+
+        .skill-badge {
+            transition: all 0.2s ease;
+        }
+
+        .skill-badge:hover {
+            transform: scale(1.05);
+            background: hsl(330 25% 35%);
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: hsl(330 15% 45%);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+    </style>
+</head>
+<body class="bg-background text-foreground">
+    <!-- @COMPONENT: Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl font-bold gradient-text">JD</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link text-muted-foreground hover:text-foreground">About</a>
+                    <a href="#projects" class="nav-link text-muted-foreground hover:text-foreground">Projects</a>
+                    <a href="#contact" class="nav-link text-muted-foreground hover:text-foreground">Contact</a>
+                </div>
+                <button class="md:hidden text-muted-foreground hover:text-foreground">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section class="min-h-screen flex items-center justify-center px-6 pt-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="fade-in stagger-1">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    <span class="gradient-text">Lorem Ipsum</span>
+                </h1>
+            </div>
+            <div class="fade-in stagger-2">
+                <p class="text-xl md:text-2xl text-muted-foreground mb-4">Frontend Engineer</p>
+            </div>
+            <div class="fade-in stagger-3">
+                <p class="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8" data-mock="true">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="fade-in stagger-4 flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-primary hover:bg-primary/80 text-primary-foreground px-8 py-3 rounded-lg font-medium transition-colors" data-event="click:scrollToProjects">
+                    View My Work
+                </button>
+                <button class="border border-border hover:border-primary text-foreground px-8 py-3 rounded-lg font-medium transition-colors" data-event="click:scrollToContact">
+                    Get In Touch
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: About Section -->
+    <section id="about" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                <span class="gradient-text">About Me</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <!-- A professional headshot of a developer working at a modern desk setup -->
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800" alt="Professional developer portrait" class="rounded-xl shadow-xl w-full h-auto"/>
+                </div>
+                <div>
+                    <p class="text-lg text-muted-foreground mb-6" data-mock="true">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p class="text-lg text-muted-foreground mb-8" data-mock="true">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                    </p>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Skills & Technologies</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-badge bg-muted text-muted-foreground px-4 py-2 rounded-full text-sm">JavaScript</span>
+                            <span class="skill-badge bg-muted text-muted-foreground px-4 py-2 rounded-full text-sm">React</span>
+                            <span class="skill-badge bg-muted text-muted-foreground px-4 py-2 rounded-full text-sm">Node.js</span>
+                            <span class="skill-badge bg-muted text-muted-foreground px-4 py-2 rounded-full text-sm">Python</span>
+                            <span class="skill-badge bg-muted text-muted-foreground px-4 py-2 rounded-full text-sm">Django</span>
+                            <span class="skill-badge bg-muted text-muted-foreground px-4 py-2 rounded-full text-sm">TypeScript</span>
+                            <span class="skill-badge bg-muted text-muted-foreground px-4 py-2 rounded-full text-sm">TailwindCSS</span>
+                            <span class="skill-badge bg-muted text-muted-foreground px-4 py-2 rounded-full text-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About Section -->
+
+    <!-- @COMPONENT: Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-card/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                <span class="gradient-text">Featured Projects</span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- @MAP: projects.map(project => ( -->
+                <div class="project-card bg-card border border-border rounded-xl p-6 hover:border-primary/50">
+                    <div class="mb-4">
+                        <!-- A modern web application dashboard interface on a laptop screen -->
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Modern web dashboard" class="w-full h-48 object-cover rounded-lg" data-mock-image="true"/>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3" data-bind="project.title" data-mock="true">E-Commerce Dashboard</h3>
+                    <p class="text-muted-foreground mb-4" data-bind="project.description" data-mock="true">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">React</span>
+                        <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">Node.js</span>
+                        <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">MongoDB</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-primary hover:text-primary/80 transition-colors" data-mock="true">
+                            <i class="fab fa-github mr-2"></i>Code
+                        </a>
+                        <a href="#" class="text-primary hover:text-primary/80 transition-colors" data-mock="true">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-card border border-border rounded-xl p-6 hover:border-primary/50">
+                    <div class="mb-4">
+                        <!-- A mobile application interface displayed on a smartphone mockup -->
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Mobile app interface" class="w-full h-48 object-cover rounded-lg" data-mock-image="true"/>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3" data-mock="true">Task Management App</h3>
+                    <p class="text-muted-foreground mb-4" data-mock="true">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">React Native</span>
+                        <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">Firebase</span>
+                        <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">Redux</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-primary hover:text-primary/80 transition-colors" data-mock="true">
+                            <i class="fab fa-github mr-2"></i>Code
+                        </a>
+                        <a href="#" class="text-primary hover:text-primary/80 transition-colors" data-mock="true">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-card border border-border rounded-xl p-6 hover:border-primary/50">
+                    <div class="mb-4">
+                        <!-- A data visualization dashboard with charts and graphs -->
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Data visualization dashboard" class="w-full h-48 object-cover rounded-lg" data-mock-image="true"/>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3" data-mock="true">Analytics Platform</h3>
+                    <p class="text-muted-foreground mb-4" data-mock="true">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">Vue.js</span>
+                        <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">Python</span>
+                        <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs">D3.js</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-primary hover:text-primary/80 transition-colors" data-mock="true">
+                            <i class="fab fa-github mr-2"></i>Code
+                        </a>
+                        <a href="#" class="text-primary hover:text-primary/80 transition-colors" data-mock="true">
+                            <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                        </a>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Projects Section -->
+
+    <!-- @COMPONENT: Contact Section -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+                <span class="gradient-text">Get In Touch</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Let's Connect</h3>
+                    <p class="text-muted-foreground mb-6" data-mock="true">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary/20 p-3 rounded-lg">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Email</p>
+                                <p class="text-muted-foreground" data-mock="true">hello@example.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary/20 p-3 rounded-lg">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Location</p>
+                                <p class="text-muted-foreground" data-mock="true">New York, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-8">
+                        <a href="#" class="bg-primary/20 hover:bg-primary/30 p-3 rounded-lg transition-colors" data-mock="true">
+                            <i class="fab fa-github text-primary text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-primary/20 hover:bg-primary/30 p-3 rounded-lg transition-colors" data-mock="true">
+                            <i class="fab fa-linkedin text-primary text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-primary/20 hover:bg-primary/30 p-3 rounded-lg transition-colors" data-mock="true">
+                            <i class="fab fa-twitter text-primary text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <form class="space-y-6" data-event="submit:handleContactForm" data-implementation="Should POST to Django backend which writes to Firebase">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full bg-input border border-border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring" placeholder="Your Name" data-bind="formData.name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full bg-input border border-border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring" placeholder="your.email@example.com" data-bind="formData.email">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full bg-input border border-border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring resize-none" placeholder="Your message..." data-bind="formData.message"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-primary/80 text-primary-foreground py-3 rounded-lg font-medium transition-colors">
+                            Send Message
+                        </button>
+                        <!-- @STATE: isLoading:boolean = false -->
+                        <!-- @STATE: formData:object = { name: '', email: '', message: '' } -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact Section -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="py-8 px-6 border-t border-border">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-muted-foreground" data-mock="true">
+                © 2024 Lorem Ipsum. Built with React, Django, and Firebase.
+            </p>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        (function() {
+            // TODO: Implement smooth scrolling navigation
+            // TODO: Implement contact form submission to Django backend
+            // TODO: Add form validation
+            // TODO: Implement mobile navigation toggle
+            
+            // Mock scroll behavior for demonstration
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Mock form submission
+            const contactForm = document.querySelector('form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    console.log('Form submission intercepted for demo');
+                    // TODO: Replace with actual API call to Django backend
+                    alert('Form submitted successfully! (Mock)');
+                });
+            }
+
+            // Animate elements on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe project cards for scroll animations
+            document.querySelectorAll('.project-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'all 0.6s ease';
+                observer.observe(card);
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAYA FAIROUZ MENAIFI</title>
+    <meta name="description" content=" Data Science and Backend Developer ">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-purple': '#765D67',
+                        'custom-dark-purple': '#6D3C52',
+                        'custom-darker-purple': '#4B2138',
+                        'custom-darkest': '#1B0C1A',
+                        'custom-dark-bg': '#2D222F',
+                        'custom-light': '#FADCD5'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Poppins', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-custom-darkest text-custom-light font-sans">
+    <!-- Header Component -->
+    <header id="header"></header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen"></section>
+        
+        <!-- About Section -->
+        <section id="about"></section>
+        
+        <!-- Projects Section -->
+        <section id="projects"></section>
+        
+        <!-- Contact Section -->
+        <section id="contact"></section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-custom-dark-bg border-t border-custom-darker-purple py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm text-custom-purple mt-2">© All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Load React Components -->
+    <script type="module" src="script.js"></script>
+    <script type="module" src="components/Header.js"></script>
+    <script type="module" src="components/Hero.js"></script>
+    <script type="module" src="components/About.js"></script>
+    <script type="module" src="components/Projects.js"></script>
+    <script type="module" src="components/Contact.js"></script>
+    
+    <script>
+        // Initialize Feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
