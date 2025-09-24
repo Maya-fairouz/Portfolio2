@@ -98,22 +98,18 @@ class Projects {
                         ${project.title}
                     </h3>
                     
-                    <p class="text-custom-light/80 mb-4 line-clamp-3">
+                    <p class="text-custom-light/80 mb-4">
                         ${project.description}
                     </p>
 
                     <!-- Technologies -->
                     <div class="flex flex-wrap gap-2 mb-6">
-                        ${project.technologies.slice(0, 4).map(tech => `
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs text-custom-light">
-                                ${tech}
-                            </span>
-                        `).join('')}
-                        ${project.technologies.length > 4 ? `
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs text-custom-light">
-                                +${project.technologies.length - 4} more
-                            </span>
-                        ` : ''}
+
+                            ${project.technologies.map(tech => `
+                                    <span class="skill-tag px-3 py-1 rounded-full text-xs text-custom-light">
+                                        ${tech}
+                                    </span>
+                                `).join('')}
                     </div>
 
                     <!-- Project Links -->
