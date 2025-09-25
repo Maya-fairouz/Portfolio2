@@ -21,13 +21,13 @@ def main():
             os.environ["SESSION_SECRET"] = "dev-secret-key-change-in-production"
             
         # Start Flask application
-        print("📡 Starting Flask backend on http://localhost:5000")
+        print("📡 Starting Flask backend on http://localhost:5001 ?")
         print("🎨 Frontend will be served from /static/")
         print("-" * 50)
         
         # Import and run the Flask app
         from app import app
-        app.run(host='0.0.0.0', port=5000, debug=True)
+        app.run(host='0.0.0.0', port=5001, debug=True)
         
     except KeyboardInterrupt:
         print("\n\n🛑 Application stopped by user")
