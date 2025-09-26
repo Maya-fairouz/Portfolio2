@@ -120,21 +120,11 @@ class Projects {
                             rel="noopener noreferrer"
                             class="flex-1 btn-primary px-4 py-2 rounded-lg text-custom-light text-sm font-medium text-center hover-scale inline-flex items-center justify-center"
                         >
-                            <i data-feather="external-link" class="w-4 h-4 mr-2"></i>
-                            Live Demo
+                                <i data-feather="github" class="w-4 h-4 mr-2"></i>
+                            Github 
                         </a>
                         
-                        ${project.github_url ? `
-                            <a 
-                                href="${project.github_url}" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                class="border border-custom-purple text-custom-purple px-4 py-2 rounded-lg text-sm font-medium hover:bg-custom-purple hover:text-custom-light transition-all duration-300 inline-flex items-center justify-center"
-                            >
-                                <i data-feather="github" class="w-4 h-4 mr-2"></i>
-                                Code
-                            </a>
-                        ` : ''}
+
                     </div>
                 </div>
             </div>
