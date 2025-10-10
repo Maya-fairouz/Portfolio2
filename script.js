@@ -231,18 +231,19 @@ class PortfolioApp {
                     description: " An Information Retrieval system to improves search relevance by automatically expanding queries with semantically related terms. Leveraged Word2Vec embedding and evaluated performance using Terrier4 with BM25 ranking.",
                     image_url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
                     technologies: ["Python", "NLTK", "Gensim", "NumPy", "pandas", "Word2Vec", "Terrier4", "Jupyter Notebook"],
-                    project_url: "https://github.com/Maya-fairouz",
-                    github_url: "https://github.com/Maya-fairouz",
+                    project_url: "https://github.com/Maya-fairouz/IR-assignment",
+                    github_url: "https://github.com/Maya-fairouz/IR-assignment",
                     featured: true
                 },
                 {
+
                     id: 2,
-                    title: "Customer Churn Prediction Model",
-                    description: "Developed a machine learning model to predict customer churn with 92% accuracy using various classification algorithms.",
-                    image_url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-                    technologies: ["Python", "Scikit-learn", "XGBoost", "Flask", "Docker"],
-                    project_url: "https://github.com/Maya-fairouz",
-                    github_url: "https://github.com/Maya-fairouz",
+                    title: "Harmful Insect Classification Model",
+                    description: "Built a deep learning CNN to classify 15 species of harmful agricultural insects using TensorFlow, improving pest identification accuracy for precision farming.",
+                    image_url: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                    technologies: ["Python", "TensorFlow", "Keras", "OpenCV", "NumPy"],
+                    project_url: "https://github.com/Maya-fairouz/insects_classification",
+                    github_url: "https://github.com/Maya-fairouz/insects_classification",
                     featured: true
                 },
                 {
