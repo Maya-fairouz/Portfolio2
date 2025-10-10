@@ -227,7 +227,7 @@ class PortfolioApp {
             projects: [
     {
                     id: 1,
-                    title: "Enhancing Information Retrieval with Query Expansion using NLP & Word Embeddings",
+                    title: "Enhancing Information Retrieval with Query Expansion",
                     description: " An Information Retrieval system to improves search relevance by automatically expanding queries with semantically related terms. Leveraged Word2Vec embedding and evaluated performance using Terrier4 with BM25 ranking.",
                     image_url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
                     technologies: ["Python", "NLTK", "Gensim", "NumPy", "pandas", "Word2Vec", "Terrier4", "Jupyter Notebook"],
