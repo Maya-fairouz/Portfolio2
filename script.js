@@ -255,37 +255,37 @@ class PortfolioApp {
                     project_url: "https://github.com/Maya-fairouz/Cancer_Detection_System",
                     github_url: "https://github.com/Maya-fairouz/Cancer_Detection_System",
                     featured: true
-                },
-                {
-                    id: 4,
-                    title: "Social Media Sentiment Analysis",
-                    description: "Built a system to analyze sentiment in social media posts using NLP techniques and deep learning models.",
-                    image_url: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-                    technologies: ["Python", "NLTK", "TensorFlow", "Twitter API", "FastAPI"],
-                    project_url: "https://github.com/Maya-fairouz",
-                    github_url: "https://github.com/Maya-fairouz",
-                    featured: false
-                },
-                {
-                    id: 5,
-                    title: "Financial Portfolio Tracker",
-                    description: "Developed a web application to track investment portfolios with automated data fetching and performance analysis.",
-                    image_url: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-                    technologies: ["React", "Python", "Alpha Vantage API", "PostgreSQL", "Chart.js"],
-                    project_url: "https://github.com/Maya-fairouz",
-                    github_url: "https://github.com/Maya-fairouz",
-                    featured: false
-                },
-                {
-                    id: 6,
-                    title: "Weather Prediction System",
-                    description: "Created a weather prediction system using historical data and machine learning algorithms with web interface.",
-                    image_url: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-                    technologies: ["Python", "Prophet", "Flask", "OpenWeatherMap API", "Bootstrap"],
-                    project_url: "https://github.com/Maya-fairouz",
-                    github_url: "https://github.com/Maya-fairouz",
-                    featured: false
-                }
+                 }
+                // {
+                //     id: 4,
+                //     title: "Social Media Sentiment Analysis",
+                //     description: "Built a system to analyze sentiment in social media posts using NLP techniques and deep learning models.",
+                //     image_url: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                //     technologies: ["Python", "NLTK", "TensorFlow", "Twitter API", "FastAPI"],
+                //     project_url: "https://github.com/Maya-fairouz",
+                //     github_url: "https://github.com/Maya-fairouz",
+                //     featured: false
+                // },
+                // {
+                //     id: 5,
+                //     title: "Financial Portfolio Tracker",
+                //     description: "Developed a web application to track investment portfolios with automated data fetching and performance analysis.",
+                //     image_url: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                //     technologies: ["React", "Python", "Alpha Vantage API", "PostgreSQL", "Chart.js"],
+                //     project_url: "https://github.com/Maya-fairouz",
+                //     github_url: "https://github.com/Maya-fairouz",
+                //     featured: false
+                // },
+                // {
+                //     id: 6,
+                //     title: "Weather Prediction System",
+                //     description: "Created a weather prediction system using historical data and machine learning algorithms with web interface.",
+                //     image_url: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                //     technologies: ["Python", "Prophet", "Flask", "OpenWeatherMap API", "Bootstrap"],
+                //     project_url: "https://github.com/Maya-fairouz",
+                //     github_url: "https://github.com/Maya-fairouz",
+                //     featured: false
+                // }
             ],
             skills: {
                 languages: ['Python', 'JavaScript', 'TypeScript', 'SQL', 'R'],
