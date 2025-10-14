@@ -288,12 +288,12 @@ class PortfolioApp {
                 // }
             ],
             skills: {
-                languages: ['Python', 'JavaScript', 'TypeScript', 'SQL', 'R'],
-                frontend: ['React', 'Vue.js', 'HTML/CSS', 'TailwindCSS', 'Bootstrap'],
-                backend: ['Flask', 'FastAPI', 'Node.js', 'Express', 'Django'],
+                languages: ['Python', 'JavaScript', 'SQL','Java'],
+                frontend: ['React', 'HTML/CSS', 'TailwindCSS', 'Bootstrap'],
+                backend: ['Flask', 'FastAPI', 'Django', 'Springboot'],
                 databases: ['PostgreSQL', 'MongoDB', 'Redis', 'SQLite', 'MySQL'],
-                tools: ['Git', 'Docker', 'AWS', 'Jupyter', 'VS Code'],
-                datascience: ['Pandas', 'NumPy', 'Scikit-learn', 'TensorFlow', 'Plotly']
+                tools: ['Git', 'Docker', 'AWS', 'Jupyter'],
+                datascience: ['Pandas', 'NumPy', 'Scikit-learn', 'TensorFlow']
             }
         };
         
