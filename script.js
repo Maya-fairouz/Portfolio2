@@ -255,6 +255,16 @@ class PortfolioApp {
                     project_url: "https://github.com/Maya-fairouz/Cancer_Detection_System",
                     github_url: "https://github.com/Maya-fairouz/Cancer_Detection_System",
                     featured: true
+                 },
+                                 {
+                    id: 4,
+                    title: "Web Scrapping",
+                    description: "Developed an AI-powered diagnostic tool for bladder cancer classification using deep learning and VGG16. It analyzes histopathological images to assist doctors in making faster, data-driven decisions. Includes a companion web app for real-time testing and visualization of model predictions.",
+                    image_url: "./media/cancer.jpeg",
+                    technologies: ["Python", "TensorFlow", "Keras", "scikit-learn", "Pandas", "NumPy", "Matplotlib"],
+                    project_url: "https://github.com/Maya-fairouz/Cancer_Detection_System",
+                    github_url: "https://github.com/Maya-fairouz/Cancer_Detection_System",
+                    featured: true
                  }
                 // {
                 //     id: 4,
@@ -293,7 +303,7 @@ class PortfolioApp {
                 backend: ['Flask', 'FastAPI', 'Django', 'Springboot'],
                 databases: ['PostgreSQL', 'MongoDB', 'Redis', 'SQLite', 'MySQL'],
                 tools: ['Git', 'Docker', 'AWS', 'Jupyter'],
-                datascience: ['Pandas', 'NumPy', 'Scikit-learn', 'TensorFlow']
+                datascience: ['Pandas', 'NumPy', 'Scikit-learn', 'TensorFlow','Matplotlib']
             }
         };
         
