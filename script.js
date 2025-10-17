@@ -256,16 +256,17 @@ class PortfolioApp {
                     github_url: "https://github.com/Maya-fairouz/Cancer_Detection_System",
                     featured: true
                  },
-                                 {
-                    id: 4,
-                    title: "Web Scrapping",
-                    description: "Developed an AI-powered diagnostic tool for bladder cancer classification using deep learning and VGG16. It analyzes histopathological images to assist doctors in making faster, data-driven decisions. Includes a companion web app for real-time testing and visualization of model predictions.",
-                    image_url: "./media/cancer.jpeg",
-                    technologies: ["Python", "TensorFlow", "Keras", "scikit-learn", "Pandas", "NumPy", "Matplotlib"],
-                    project_url: "https://github.com/Maya-fairouz/Cancer_Detection_System",
-                    github_url: "https://github.com/Maya-fairouz/Cancer_Detection_System",
-                    featured: true
-                 }
+                {
+                id: 4,
+                title: "Google Maps Business Scraper",
+                description: "Built a Python-based web scraping tool using ScraperAPI to extract structured business data from Google Maps. The project automates data collection for business listings, including names, addresses, ratings, and categories. It filters and exports top-rated businesses to CSV for analysis, using NumPy and Pandas for data processing.",
+                image_url: "./media/webs.png",
+                technologies: ["Python", "Requests", "Pandas", "NumPy", "ScraperAPI"],
+                project_url: "https://github.com/Maya-fairouz/web_scrapping",
+                github_url: "https://github.com/Maya-fairouz/web_scrapping",
+                featured: true
+                }
+
                 // {
                 //     id: 4,
                 //     title: "Social Media Sentiment Analysis",
