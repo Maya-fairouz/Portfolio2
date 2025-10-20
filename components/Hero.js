@@ -52,8 +52,9 @@ class Hero {
                             </div>
                             
                             <p class="text-lg md:text-l text-custom-light/85 max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-in-up" style="animation-delay: 0.8s;">
-                                I create modern, responsive web applications with clean code and beautiful user experiences. 
-                                Passionate about turning complex problems into simple, elegant solutions.
+                                
+                            I create modern, responsive web applications with clean code and beautiful user experiences, and analyze and model data to extract insights and support data-driven decisions.
+                            Passionate about turning complex problems into simple, elegant solutions.
                             </p>
                             
                             <!--  CTA Buttons -->

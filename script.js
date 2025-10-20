@@ -276,18 +276,8 @@ class PortfolioApp {
                 project_url: "https://github.com/Maya-fairouz/L3_Memoire_GIS",
                 github_url: "https://github.com/Maya-fairouz/L3_Memoire_GIS",
                 featured: true
-            },
-                                            
-         {
-                id: 6,
-                title: "GIS-Based Railway Management System",
-                description: "Designed and developed a Django-based Geographic Information System (GIS) integrated with the SUMO traffic simulator for managing the Algerian Railway Company’s operations. The application enables real-time monitoring and visualization of trains, incidents, obstacles, and maintenance activities on an interactive map. It provides role-based dashboards for managers, controllers, and field agents, enhancing operational efficiency and decision-making.",
-                image_url: "./media/tw.jpg",
-                technologies: ["Django", "Python", "Leaflet", "SUMO", "PostgreSQL", "Folium", "Bootstrap"],
-                project_url: "https://github.com/Maya-fairouz/L3_Memoire_GIS",
-                github_url: "https://github.com/Maya-fairouz/L3_Memoire_GIS",
-                featured: true
-            },
+            }
+                        
             
 
                 // {

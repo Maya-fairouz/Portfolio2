@@ -53,22 +53,51 @@ class About {
                         <div class="fade-in-on-scroll">
                             <h3 class="text-2xl font-semibold text-custom-light mb-8">Education😍</h3>                        
                             <div class="prose prose-lg prose-invert max-w-none">
-                                <p class="text-custom-light/90 leading-relaxed mb-6">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                
-                                <p class="text-custom-light/90 leading-relaxed mb-6">
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                
-                                <p class="text-custom-light/90 leading-relaxed mb-8">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
-                                </p>                                <p class="text-custom-light/90 leading-relaxed mb-8">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
-                                </p>
+      
 
-                               
-                                
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Master's Degree Card -->
+      <div class="bg-custom-dark/40 border border-custom-purple/30 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-1">
+        <h4 class="text-xl font-semibold text-custom-light mb-2">
+          🎓 Master’s Degree in Data Science and Intelligent Systems
+        </h4>
+        <p class="text-custom-light/80 mb-1">
+          <span class="font-medium">Abdelhamid Mehri University – Constantine 2</span>
+        </p>
+        <p class="text-custom-light/60 text-sm mb-3">Faculty of New Information and Communication Technologies (NTIC)</p>
+        <p class="text-custom-light/80 text-sm leading-relaxed">
+          Focused on AI, big data analytics, and intelligent system design. Developed advanced deep learning projects and real-time AI applications during the final year.
+        </p>
+        <p class="text-custom-purple mt-3 text-sm font-medium">Graduated: 2025</p>
+      </div>
+
+      <!-- Licence Degree Card -->
+      <div class="bg-custom-dark/40 border border-custom-purple/30 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-1">
+        <h4 class="text-xl font-semibold text-custom-light mb-2">
+          💻 Bachelor’s Degree in Information Systems
+        </h4>
+        <p class="text-custom-light/80 mb-1">
+          <span class="font-medium">Abdelhamid Mehri University – Constantine 2</span>
+        </p>
+        <p class="text-custom-light/60 text-sm mb-3">Faculty of New Information and Communication Technologies (NTIC)</p>
+        <p class="text-custom-light/80 text-sm leading-relaxed">
+          Studied software engineering, databases, and web technologies. Built strong foundations in programming, system design, and data management.
+        </p>
+        <p class="text-custom-purple mt-3 text-sm font-medium">Completed: Before 2025</p>
+      </div>
+
+      <br>
+
+    </div>
+
+    
+
+
+                            
+
+
+                            <p class="text-base text-custom-light/70">
 
                                 <!-- Personal Interests -->
                                 <div class="mb-8">
