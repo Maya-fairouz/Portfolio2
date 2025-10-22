@@ -48,10 +48,10 @@ class About {
                         </p>
                     </div>
 
-                    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <div class="flex flex-col gap-20">
                         <!-- Bio Section -->
                         <div class="fade-in-on-scroll">
-                            <h3 class="text-2xl font-semibold text-custom-light mb-8">Education😍</h3>                        
+                            <h3 class="text-2xl font-semibold text-custom-light mb-8">Education</h3>                        
                             <div class="prose prose-lg prose-invert max-w-none">
       
 
@@ -67,7 +67,7 @@ class About {
         </p>
         <p class="text-custom-light/60 text-sm mb-3">Faculty of New Information and Communication Technologies (NTIC)</p>
         <p class="text-custom-light/80 text-sm leading-relaxed">
-          Focused on AI, big data analytics, and intelligent system design. Developed advanced deep learning projects and real-time AI applications during the final year.
+          Focused on AI, big data analytics, cloud computing, IOT and intelligent system design. Developed advanced deep learning projects and real-time AI applications during the final year.
         </p>
         <p class="text-custom-purple mt-3 text-sm font-medium">Graduated: 2025</p>
       </div>
@@ -84,7 +84,7 @@ class About {
         <p class="text-custom-light/80 text-sm leading-relaxed">
           Studied software engineering, databases, and web technologies. Built strong foundations in programming, system design, and data management.
         </p>
-        <p class="text-custom-purple mt-3 text-sm font-medium">Completed: Before 2025</p>
+        <p class="text-custom-purple mt-3 text-sm font-medium">Completed: 2023</p>
       </div>
 
       <br>
@@ -115,7 +115,7 @@ class About {
 
                         <!-- Skills Section -->
                         <div class="fade-in-on-scroll">
-                            <h3 class="text-2xl font-semibold text-custom-light mb-8">Technical Skills ❤️</h3>
+                            <h3 class="text-2xl font-semibold text-custom-light mb-8">Technical Skills</h3>
                             
                             ${Object.entries(this.skills).map(([category, skillList]) => `
                                 <div class="mb-8">
