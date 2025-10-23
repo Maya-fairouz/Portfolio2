@@ -312,7 +312,7 @@ class PortfolioApp {
                 // }
             ],
             skills: {
-                languages: ['Python', 'JavaScript', 'SQL','Java'],
+                languages: ['Python', 'JavaScript', 'SQL','Java','hh'],
                 frontend: ['React', 'HTML/CSS', 'TailwindCSS', 'Bootstrap'],
                 backend: ['Flask', 'FastAPI', 'Django', 'Springboot'],
                 databases: ['PostgreSQL', 'MongoDB', 'Redis', 'SQLite', 'MySQL'],
